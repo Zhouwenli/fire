@@ -45,7 +45,9 @@
         <div class="divRight">
           <p class="divRightBig">可视监管</p>
           <p class="divRightSmall">重点部位在线可视监管</p>
-          <span class="look">点击查看</span>
+          <router-link :to="{path:'/VisualSuper'}">
+            <span class="look">点击查看</span>
+          </router-link>
         </div>
       </li>
       <li>

@@ -10,7 +10,8 @@ import FireAlarm from '../views/FireAlarm.vue'
 import WaterAlarm from '../views/WaterAlarm.vue'
 import WaterAlarmList from '../views/WaterAlarmList.vue'
 import WaterAlarmListen from '../views/WaterAlarmListen.vue'
-
+import VisualSuper from '../views/VisualSuper.vue' //可视监管
+import VisualSuperList from '../views/VisualSuperList.vue' //可视监管
 Vue.use(VueRouter)
 const routes = [
   {
@@ -86,8 +87,15 @@ const routes = [
       title:'实时监测'
     }
   },
-
-
+  {
+    path: '/VisualSuper',
+    name: 'VisualSuper',
+    component: VisualSuper,
+    meta:{
+      title:'重点部位可视监管'
+    }
+  },
+  {    path: '/VisualSuperList',    name: 'VisualSuperList',    component: VisualSuperList,    meta:{      title:'重点部位可视监管'    }  }
 ]
 
 const router = new VueRouter({
