@@ -26,10 +26,20 @@ export default{
   methods:{
     login:function(){
       if(this.username == ''){
-        alert("用户名不能为空")
+        this.tips('single','用户名不能为空')
+        return
       }else if(this.password ==''){
-        alert("密码不能为空")
+        this.tips('single','密码不能为空')
+        return
       }
+    },
+    tips:function(type,mes){
+      this.$alert({
+       type:type,
+       title:'温馨提示',
+       alertMessage:mes,
+       btnName:'确定'
+      }).showModal()
     }
   }
 }

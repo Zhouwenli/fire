@@ -22,12 +22,12 @@ export default {
       selectedLabelDefault: '/',
       tabs: [{
         label: '首页',
-        icon: 'icon-home',
+        icon: 'cubeic-home',
         path: '/'
       }, {
         label: '我的',
-        icon: 'icon-navigation',
-        path: '/guide'
+        icon: 'cubeic-person',
+        path: '/My'
       }]
     }
   },

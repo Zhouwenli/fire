@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Index from '../views/Index.vue'
 import Home from '../views/Home.vue'
-import Guide from '../views/Guide.vue'
+import My from '../views/My.vue'
 import ElectricityUtilization from '../views/ElectricityUtilization.vue' //用电隐患
 import ElectricityUtilizationList from '../views/ElectricityUtilizationList.vue' //用电隐患
 import ElectricityUtilizationListen from '../views/ElectricityUtilizationListen.vue' //用电隐患
@@ -25,8 +25,8 @@ const routes = [
         component: Home
       },
       {
-        path: '/guide',
-        component: Guide
+        path: '/my',
+        component: My
       },
       {
         path: '/ElectricityUtilization',

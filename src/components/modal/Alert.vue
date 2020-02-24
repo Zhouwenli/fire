@@ -2,7 +2,7 @@
  <transition name='fade'>
     <!-- 蒙版 -->
     <div class="modal-mask" v-if="show" @touchmove.prevent>
-      <div class="alert" v-if="type ==='1'">
+      <div class="alert" v-if="type ==='single'">
         <div>
           <div class="titletext" v-if="title">{{title}}</div>
           <div class="content">{{alertMessage}}</div>
@@ -22,7 +22,7 @@
 </template>
 
 <script>
-  //type为1是alert弹窗，type为2是企业资质类弹窗
+  //type为single是alert弹窗，type为2是企业资质类弹窗
 export default {
   name: 'Modalalert',
   created () {
@@ -134,7 +134,7 @@ export default {
       white-space nowrap
       letter-spacing 2px
       .titletext
-        padding 58px 0 0
+        padding 30px 0 0
         color #f19e2b
         font-size 30px
       .content
