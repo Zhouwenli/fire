@@ -13,6 +13,8 @@ import WaterAlarmListen from '../views/WaterAlarmListen.vue'
 import VisualSuper from '../views/VisualSuper.vue' //可视监管
 import VisualSuperList from '../views/VisualSuperList.vue' //可视监管
 import Login from '../views/Login.vue' //可视监管
+import Monitor from '../views/Monitor.vue'
+
 Vue.use(VueRouter)
 const routes = [
   {
@@ -101,7 +103,13 @@ const routes = [
     path: '/Login',
     name: 'Login',
     component: Login
+  },
+  {
+    path: '/Monitor',
+    name: 'Monitor',
+    component: Monitor
   }
+  
 ]
 
 const router = new VueRouter({

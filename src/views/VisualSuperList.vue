@@ -6,7 +6,10 @@
     <ul>
       <li v-for="(item,i) in 10" >
         <div class="listLeft">
-          <img src="../assets/img/electricity/video1.png" alt="">
+          <router-link :to="{path:'/Monitor'}">
+            <img src="../assets/img/electricity/video1.png" alt="">
+          </router-link>
+          
         </div>
         <div class="listRight">
           <p class="listRightWord">单位：北京华联综合超市股份有限公司</p>

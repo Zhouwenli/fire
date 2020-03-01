@@ -6,7 +6,9 @@
     <ul>
       <li v-for="(item,i) in 10" >
         <div class="listLeft">
-          <img src="../assets/img/electricity/alarm.png" alt="">
+          <router-link :to="{path:'/Monitor'}">
+            <img src="../assets/img/electricity/alarm.png" alt="">
+          </router-link>
         </div>
         <div class="listRight">
           <p class="listRightWord">类型：Arcm300T-GPRS</p>
