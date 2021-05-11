@@ -14,7 +14,7 @@
     "core-js": "^3.4.3",
     "cube-ui": "~1.12.15",
     "echarts": "^4.6.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "postcss-px2rem-exclude": "0.0.6",
     "vue": "^2.6.10",
     "vue-resource": "^1.5.1",
